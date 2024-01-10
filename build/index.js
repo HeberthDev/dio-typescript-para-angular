@@ -10,8 +10,6 @@ const bot2 = {
         return "Hello";
     }
 };
-console.log(bot1);
-console.log(bot2);
 class Pessoa {
     constructor(id, name) {
         this.id = id;
