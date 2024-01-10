@@ -1,48 +1,22 @@
-//tipos primitivos: boolean, number, string
-let ligado: boolean = false;
-let nome: string = "false";
-let idade: number = 30;
-let altura: number = 1.78;
-
-// tipos especiais null, undefined
-let nulo: null = null;
-let indefinido: undefined = undefined;
-
-//tipos abrangentes: any, void
-let retorno: void;
-let retornoView: any = false;
-
-//objeto - sem previsibilidade
-let produto: object = {
-    name: "Heberth",
-    cidade: "rj",
-    idade: 30,
+// Funções
+function addNumber(x: number, y: number): number {
+    return x + y;
 }
 
-type ProdutoLoja = {
-    nome: string,
-    preco: number,
-    unidade: number,
+function addToHello(name: string): string {
+    return `Hello ${name}`;
 }
 
-let meuProduto: ProdutoLoja = {
-    nome: "Tênis",
-    preco: 89.99,
-    unidade: 5,
+function callToPhone(phone: number | string): number | string {
+    return phone;
 }
 
-//Arrays - Determina os tipos ignorando a orgem
-let dados: string[] = ["felipe", "ana", "adriana"];
-let dados2: Array<string> = ["felipe", "ana", "adriana"];
+async function getDatabase(id:number): Promise<string> {
+    return "felipe";
+}
 
-let infos: (string | number)[] = ["felipe", 30];
+let soma: number = addNumber(4, 7);
 
-//Tuplas - determina os tipos obrigatoriamente na mesma ordem passada
-let boleto: [string, number, number] = ["agua", 215, 51616656];
-
-//Arrays métodos
-dados.pop();
-
-//Datas
-let aniversario:Date = new Date("2022-12-01 05:00");
-console.log(aniversario.toString());
+console.log(soma);
+console.log(addToHello("Heberth"));
+console.log(callToPhone(21995053415));
