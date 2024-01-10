@@ -1,11 +1,23 @@
 "use strict";
-// Funções
-function addNumber(x, y) {
-    return x + y;
+const bot1 = {
+    id: 1,
+    name: "23",
+};
+const bot2 = {
+    id: 1,
+    name: "23",
+    sayHello() {
+        return "Hello";
+    }
+};
+class Pessoa {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    sayHello() {
+        return "Hello";
+    }
 }
-function addToHello(name) {
-    return `Hello ${name}`;
-}
-let soma = addNumber(4, 7);
-console.log(soma);
-console.log(addToHello("Heberth"));
+const p = new Pessoa(1, "heberth");
+console.log(p.sayHello());
