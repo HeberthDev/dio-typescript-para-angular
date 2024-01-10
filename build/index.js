@@ -1,11 +1,11 @@
 "use strict";
-// Funções
-function addNumber(x, y) {
-    return x + y;
-}
-function addToHello(name) {
-    return `Hello ${name}`;
-}
-let soma = addNumber(4, 7);
-console.log(soma);
-console.log(addToHello("Heberth"));
+const bot1 = {
+    id: 1,
+    name: "23",
+};
+const bot2 = {
+    id: 1,
+    name: "23",
+};
+console.log(bot1);
+console.log(bot2);
