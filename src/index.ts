@@ -39,3 +39,6 @@ let infos: (string | number)[] = ["felipe", 30];
 
 //Tuplas - determina os tipos obrigatoriamente na mesma ordem passada
 let boleto: [string, number, number] = ["agua", 215, 51616656];
+
+//Arrays métodos
+dados.pop();
