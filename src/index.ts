@@ -31,8 +31,11 @@ let meuProduto: ProdutoLoja = {
     unidade: 5,
 }
 
-//Arrays
+//Arrays - Determina os tipos ignorando a orgem
 let dados: string[] = ["felipe", "ana", "adriana"];
 let dados2: Array<string> = ["felipe", "ana", "adriana"];
 
 let infos: (string | number)[] = ["felipe", 30];
+
+//Tuplas - determina os tipos obrigatoriamente na mesma ordem passada
+let boleto: [string, number, number] = ["agua", 215, 51616656];
