@@ -6,7 +6,7 @@
 // protected - Só é acessado na própria classe e quem herda as suas características (subclasses) (implements);
 class Character {
     private name?: string;
-    stregth: number;
+    readonly stregth: number;
     skill: number;
 
     constructor(name: string, stregth: number, skill: number) {
