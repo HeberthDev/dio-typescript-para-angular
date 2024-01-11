@@ -1,14 +1,10 @@
 "use strict";
-//classes
-class Character {
-    constructor(stregth, skill) {
-        this.stregth = stregth;
-        this.skill = skill;
-    }
-    attack() {
-        console.log(`Attack with ${this.stregth} points`);
-    }
+//generics
+function concatArray(...itens) {
+    return new Array().concat(...itens);
 }
-const p1 = new Character(10, 98);
-console.log(p1);
-p1.attack();
+const numArray = concatArray([1, 5], [3]);
+const stgArray = concatArray(["felipe", "goku"], ["vegeta"]);
+numArray.push("saitama");
+console.log(numArray);
+console.log(stgArray);
