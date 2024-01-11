@@ -1,23 +1,14 @@
 "use strict";
-const bot1 = {
-    id: 1,
-    name: "23",
-};
-const bot2 = {
-    id: 1,
-    name: "23",
-    sayHello() {
-        return "Hello";
+//classes
+class Character {
+    constructor(stregth, skill) {
+        this.stregth = stregth;
+        this.skill = skill;
     }
-};
-class Pessoa {
-    constructor(id, name) {
-        this.id = id;
-        this.name = name;
-    }
-    sayHello() {
-        return "Hello";
+    attack() {
+        console.log(`Attack with ${this.stregth} points`);
     }
 }
-const p = new Pessoa(1, "heberth");
-console.log(p.sayHello());
+const p1 = new Character(10, 98);
+console.log(p1);
+p1.attack();
